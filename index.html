@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather - Homepage</title>
+</head>
+
+<body>
+    <nav class="container-fluid bg-me">
+        <div class="container bg- bg-2">
+            
+            <div class="logo-text  w-25 d-flex justify-content-center">
+                <div class=" w-75">
+                <img src="./images/logo@2x.png" alt="logo" class="logo">
+                <h1 class="site-title">Weather</h1>
+                <small class="site-description">tagline goes here</small>
+                </div>
+            </div>
+            <div class="bg- w-50">
+                <ul class="w-100 d-flex justify-content-around">
+                    <li class="menu-item"><a class="home-nav" hrf='/'>Home</a></li>
+                    <li class="menu-item"><a class="nav-tems" href="#">News</a></li>
+                    <li class="menu-item"><a class="nav-tems" href="#">Live cameras</a></li>
+                    <li class="menu-item"><a  class="nav-tems" href="#">Photos</a></li>
+                    <li class="menu-item"><a class="nav-tems" href='/contact'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contaner-fluid bg-city over">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="input-group w-100 ">
+                    <input type="text" class="form-control " placeholder="Enter City" id="Location">
+                    <button class="btn btn-primary" type="button" id="search">Find</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="card" class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="d-flex text-white bg-date justify-content-between">
+                        <p id="todayName">saturday</p>
+                        <p id="todaydate">19 feburary</p>
+                    </div>
+                    <div class="text-white bg-date-body">
+                    <div id="city">Mansoura</div>
+                    <div class="fs-1 text-center"><span id="todayTemp">15.3</span><sup>o</sup></div>
+                    <div class=" d-flex justify-content-center"><img src="" alt="" id="icon-cond" width="50px" class=""></div>
+                    <div class="text-primary" id="consdition">Partly Cloudy</div>
+                    <img src="./images/icon-umberella@2x.png" width="10%" class="me-1" alt="umbrella"><span id="humid">20%</span>
+                    <img src="./images/icon-wind@2x.png" class="me-1" width="10%" alt="wind"><span id="speed">18km/h</span>
+                    <img src="./images/icon-compass@2x.png" class="me-1" width="10%" alt="compass"><span id="com-loc">East</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex text-white bg-date justify-content-center">
+                        <p id="tomorrowDay">saturday</p>
+                    </div>
+                    <div class="text-white bg-date-body d-flex flex-column justify-content-center">
+                    <div class=" d-flex justify-content-center"><img src="" alt="" id="icon-tomorrow" width="50px" class=""></div>
+                    <div class="fs-1 text-center"><span id="tomorrowWeather">15.3</span><sup>o</sup></div>
+                    
+                    <div class="text-primary" id="consdition1"> Cloudy</div>
+                    </div>
+                </div>
+                <!-- sss -->
+                <div class="col-md-4">
+                    <div class="d-flex text-white bg-date justify-content-center">
+                        <p id="todayName2">saturday</p>
+                    </div>
+                    <div class="text-white bg-date-body d-flex flex-column justify-content-center">
+                        <div class=" d-flex justify-content-center"><img src="" alt="" id="icon-tomorrow2" width="50px" class=""></div>
+                    <div class="fs-1 text-center"><span id="todayTemp2">15.3</span><sup>o</sup></div>
+                    <div class="text-primary" id="consdition2"> Clouddy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

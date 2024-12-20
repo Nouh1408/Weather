@@ -1,0 +1,167 @@
+.logo {
+    width: 60px;
+    margin-right: 12px;
+    height: 40px;
+    float: left;
+}
+
+
+
+::placeholder {
+    color: red;
+    opacity: 1;
+}
+
+.bg-me {
+    background-color: #1E202B;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #1E202B;
+}
+.bg-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Adds space between logo and nav */
+    width: 100%;
+    /* Ensures full width usage */
+    max-width: 1200px;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+small {
+    color: #bfc1c8;
+    font-size: 10px;
+    font-weight: 300;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    margin-left: 20px;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 60%;
+}
+.over{
+    position: relative;
+}
+.bg-date{
+    background-color: #2E303D;
+    padding: 10px 15px;
+    margin: 0;
+    border-bottom: 1px solid #555; /* Subtle divider */
+    font-weight: bold;
+}
+.bg-date-body{
+    background-color: #2E303D;
+    padding: 20px 15px;
+    margin-top: -1px; /* Remove gap caused by borders */
+    border-radius: 0 0 10px 10px;  
+}
+#city {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#todayTemp ,#tomorrowWeather,#tomorrow,#todayTemp2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#consdition {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+.bg-date-body img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.bg-date-body span {
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+.home-nav {
+    color: #009ad8;
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid #009ad8;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+#Location{
+    padding: 15px 30px;
+    background-color: #1E202B;
+    border-radius: 40px;
+    border-color: transparent;
+    color: white;
+    position: relative;
+}
+#Location::placeholder{
+    color: #757575;
+    font-weight: bold;
+}
+#search{
+    border-radius: 40px;
+    padding: 10px 40px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-tems {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 15px;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-tems:hover {
+    color: #009ad8;
+    border-color: #009ad8;
+}
+
+.bg-city {
+    /* background-image: url(./images/banner.png); */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/banner.png');
+    height: 50vh;
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+
+}
+
+#search {
+    border-radius: 20px;
+}
